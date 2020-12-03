@@ -7,7 +7,7 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn keyword asm_statement CMP JMP JNZ JZ JGT JGE JLT
+syn keyword asm_statement CMP JMP JEQ JNZ JZ JGT JGE JLT
 syn keyword asm_statement CALL RET
 syn keyword asm_statement PUSH POP
 syn keyword asm_statement MOV MOVB MOVH
@@ -16,7 +16,7 @@ syn keyword asm_keyword PLACE EQU TABLE
 syn keyword asm_keyword EI DI EI0 EI1 SP BTE
 syn keyword asm_type STRING WORD
 
-syn keyword asm_operation ADD SUB MOD XOR AND OR SHL SHR
+syn keyword asm_operation ADD SUB MOD DIV XOR AND OR SHL SHR
 
 syn match asm_regist "\<R\d\+\>"
 
